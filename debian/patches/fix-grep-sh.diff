@@ -1,0 +1,9 @@
+Index: grep-3.11/src/egrep.sh
+===================================================================
+--- grep-3.11.orig/src/egrep.sh
++++ grep-3.11/src/egrep.sh
+@@ -1,4 +1,2 @@
+ #!@SHELL@
+-cmd=${0##*/}
+-echo "$cmd: warning: $cmd is obsolescent; using @grep@ @option@" >&2
+ exec @grep@ @option@ "$@"
